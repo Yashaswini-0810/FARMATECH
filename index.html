@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaTech - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to FarmaTech!</h1>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="role">Login As:</label>
+            <select id="role" name="role">
+                <option value="farmer">Farmer</option>
+                <option value="dealer">Dealer</option>
+            </select>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            var role = document.getElementById("role").value;
+            if (role === "farmer") {
+                window.location.href = "farmer.html";
+            } else {
+                window.location.href = "dealer.html";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('background.png') no-repeat center center/cover;
+    margin: 0;
+    color: white;
+    position: relative;
+}
+
+
+/* Apply background only for the home page */
+.home-page {
+    background: url('background.png') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Remove background from other pages */
+.farmer-dashboard, 
+.dealer-dashboard, 
+.fertilizer-guide, 
+.other-pages {
+    background: none;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #008000;
+}
+
+img {
+    width: 100px;
+    border-radius: 70%;
+    margin-top: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    background-color: #008000;
+    padding: 20px 10px;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+/* Separate styles for different pages */
+.farmerdashboard {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.dealerdashboard {
+    background: rgba(240, 240, 240, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.fertilizer-guide {
+    background: rgba(230, 255, 230, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.other-pages {
+    background: rgba(255, 250, 230, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Login Page Styles */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.login-container input, .login-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    margin-top: 15px;
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}

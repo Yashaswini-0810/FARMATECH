@@ -1,0 +1,56 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* Light gray background */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: green;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Home Link Styling */
+a {
+    color: purple;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    color: #444;
+}
